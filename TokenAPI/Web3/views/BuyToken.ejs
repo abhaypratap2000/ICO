@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuyToken</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.33/dist/web3.min.js"></script>
+     -->
+</head>
+
+<body>
+    <div class="container">
+       
+        <h2 id="supplieradd">Buy you Token here!</h2>
+        <div class="row">
+            <div class="col s12">
+                <form action="BbuyTokensWithEther" method="post">
+                    <label for="parts">Buy: </label>
+                    <input type="text"  placeholder="BUY" name="value">
+                   <button id="build-part" class="waves-effect waves-light btn" onclick="connect()">Confirm</button>
+                </form>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+</body>
+<script>
+     async function connect(){
+            if(typeof window.ethereum !== "undefined"){
+                ethereum.request({method:"eth_requestAccounts"});
+
+            }
+        }
+</script>
+</html>
