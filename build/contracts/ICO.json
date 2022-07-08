@@ -60,7 +60,8 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [
@@ -73,7 +74,8 @@
       "name": "transfer",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     },
     {
       "inputs": [
@@ -92,14 +94,16 @@
         }
       ],
       "stateMutability": "view",
-      "type": "function"
+      "type": "function",
+      "constant": true
     },
     {
       "inputs": [],
       "name": "buyTokensWithEther",
       "outputs": [],
       "stateMutability": "payable",
-      "type": "function"
+      "type": "function",
+      "payable": true
     }
   ],
   "metadata": "{\"compiler\":{\"version\":\"0.8.15+commit.e14f2714\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"initialSupply\",\"type\":\"uint256\"}],\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"anonymous\":false,\"inputs\":[{\"indexed\":true,\"internalType\":\"address\",\"name\":\"sender\",\"type\":\"address\"},{\"indexed\":true,\"internalType\":\"address\",\"name\":\"receiver\",\"type\":\"address\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"fundTransfered\",\"type\":\"uint256\"},{\"indexed\":false,\"internalType\":\"uint256\",\"name\":\"tokensIssued\",\"type\":\"uint256\"}],\"name\":\"TokenBuy\",\"type\":\"event\"},{\"inputs\":[],\"name\":\"buyTokensWithEther\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"numTokens\",\"type\":\"uint256\"}],\"name\":\"calculatedToken\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"_tokenAssign\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"addr\",\"type\":\"address\"}],\"name\":\"getBalance\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint256\",\"name\":\"numTokens\",\"type\":\"uint256\"}],\"name\":\"transfer\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"project:/contracts/ICO.sol\":\"ICO\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"project:/contracts/ICO.sol\":{\"keccak256\":\"0x31c47e8f106a01c1afe362d870bf636a7280140aff789a9c3a501e2657d90f83\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://0c1ddd2d35551278f9a3d2905486d6850d6186c5243196bfc8c974f14860d578\",\"dweb:/ipfs/QmU2hdUMK6WMnZTozdLHGdh9WMv3D5Kf1M8aUPdxdfgPPw\"]}},\"version\":1}",
@@ -10479,12 +10483,13 @@
     "5777": {
       "events": {},
       "links": {},
-      "address": "0xE2953bdE26698BC0e23de421DE41e903A042Afb6",
-      "transactionHash": "0x6d4774cde98986d9a724f5747087deeeb3c646d342ef4a8b32aab96e602e0e47"
+      "address": "0xC7e4c013cF4EB85db0dB4285D003a50a3F1B30BF",
+      "transactionHash": "0xaae7492a7972a073a96dd2727d31f6fd679fc2978d171553c221a21f248ce115"
     }
   },
   "schemaVersion": "3.4.7",
-  "updatedAt": "2022-07-07T10:06:20.315Z",
+  "updatedAt": "2022-07-08T06:22:47.147Z",
+  "networkType": "ethereum",
   "devdoc": {
     "kind": "dev",
     "methods": {},
